@@ -1,0 +1,51 @@
+{
+  "name": "new-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/main.js",
+  "scripts": {
+    "start": "magicjs --start",
+    "build": "magicjs --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@magicjs.dev/backend": "^3.0.65",
+    "@magicjs.dev/cli": "^3.0.64",
+    "@magicjs.dev/devtools": "^3.0.64",
+    "@magicjs.dev/frontend": "^3.0.64",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "antd": "^5.12.1",
+    "autoprefixer": "^10.4.16",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "mongodb": "^6.3.0",
+    "postcss-preset-env": "^9.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.1",
+    "tailwindcss": "^3.3.5",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17"
+  },
+  "magicjsConfig": {
+    "compilerOptions": {
+      "serverBundleAllowList": [
+        "react-dnd",
+        "react-dnd-html5-backend",
+        "dnd-core",
+        "@react-dnd/invariant",
+        "@react-dnd/asap",
+        "@react-dnd/shallowequal"
+      ]
+    }
+  }
+}
