@@ -1,0 +1,83 @@
+{
+ "name": "Product Catalogue & Details",
+ "packageId": "@mern.ai/simple-catalogue",
+ "description": "It is usually used in eCommerce and in other use cases where displaying items such as product, services etc is required. This feature primarily contains two pages, 1. lists all items, 2. shows a dedicated view of a single item.",
+ "properties": [
+  {
+   "name": "mongoDbCollectionName",
+   "value": "products",
+   "notes": "The value must be a collection name in string of which the data has to be accessed. The data is retrieved from the collection created within the data manager module."
+  },
+  {
+   "name": "label",
+   "value": "Products",
+   "notes": "The value must be a friendly display for listing of catalogue created within the data manager module"
+  },
+  {
+   "name": "isUserSpecificData",
+   "value": "false",
+   "notes": "The value should be boolean. If the data pertains to the signed user, it should return boolean [true]; whereas for administrative data management, it should return boolean [false]."
+  },
+  {
+   "name": "pageId",
+   "value": "userDashboard",
+   "notes": "The value should be either 'adminDashboard' or 'userDashboard'. If the data pertains to the signed user, it should return 'userDashboard'; whereas for administrative data management, it should return 'adminDashboard'."
+  }
+ ],
+ "label": "Item",
+ "aliases": [
+  {
+   "fileName": "catalogue-list.tsx",
+   "alias": "@mern.ai/catalogue-list-widget"
+  },
+  {
+   "fileName": "search.tsx",
+   "alias": "@mern.ai/search-widget"
+  },
+  {
+   "fileName": "list-data.tsx",
+   "mounts": [
+    {
+     "pageId": "adminDashboard",
+     "label": "Products",
+     "link": true,
+     "sortOrder": 4
+    }
+   ]
+  },
+  {
+   "fileName": "edit-data.tsx",
+   "mounts": [
+    {
+     "pageId": "adminDashboard",
+     "pathPostfix": ":itemId"
+    }
+   ]
+  }
+ ],
+ "sourceFiles": [
+  {
+   "uri": "catalogue-details.ui.tsx",
+   "pageId": "catalogueDetails",
+   "suggestedPath": "/items/:itemId"
+  },
+  {
+   "uri": "search-results.ui.tsx",
+   "pageId": "searchResult",
+   "suggestedPath": "/items/results/:keyword"
+  }
+ ],
+ "categories": [
+  "eCommerce",
+  "onlineLearning",
+  "travel",
+  "listingPlatform",
+  "eventManagement"
+ ],
+ "published": true,
+ "quickStart": true,
+ "screenshots": [
+  "https://mern-ai-template-assets.s3.ap-south-1.amazonaws.com/catalogue.png"
+ ],
+ "featureTitle": "Product Catalogue & Details"
+}

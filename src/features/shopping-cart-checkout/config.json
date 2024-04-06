@@ -1,0 +1,47 @@
+{
+ "name": "Shopping Cart & Checkout",
+ "packageId": "@mern.ai/simple-cart",
+ "description": "It acts as a shopping cart where people usually adds items from an ecommerce catalogue. Cart will have link that could help the user to checkout.",
+ "properties": [],
+ "cartCollectionName": "carts",
+ "orderCollectionName": "orders",
+ "aliases": [
+  {
+   "fileName": "add-to-cart.tsx",
+   "alias": "@mern.ai/add-to-cart-widget"
+  }
+ ],
+ "sourceFiles": [
+  {
+   "uri": "cart.ui.tsx",
+   "pageId": "cart",
+   "suggestedPath": "/cart"
+  },
+  {
+   "uri": "checkout.ui.tsx",
+   "pageId": "checkout",
+   "suggestedPath": "/checkout"
+  },
+  {
+   "uri": "orders.ui.tsx",
+   "pageId": "orders",
+   "suggestedPath": "/orders"
+  },
+  {
+   "uri": "order-details.ui.tsx",
+   "pageId": "orderDetails",
+   "suggestedPath": "/orders/:orderId"
+  }
+ ],
+ "categories": [
+  "eCommerce",
+  "onlineLearning",
+  "travel"
+ ],
+ "published": true,
+ "quickStart": true,
+ "screenshots": [
+  "https://mern-ai-template-assets.s3.ap-south-1.amazonaws.com/shopping-cart-and-checkout.png"
+ ],
+ "featureTitle": "Shopping Cart & Checkout"
+}

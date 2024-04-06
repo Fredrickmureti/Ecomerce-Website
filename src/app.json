@@ -1,3 +1,94 @@
 {
-    "routes": []
+ "routes": [
+  {
+   "path": "/auth/login",
+   "pageId": "login",
+   "view": "features/starter-kit/auth/login.ui.tsx"
+  },
+  {
+   "path": "/auth/register",
+   "pageId": "signup",
+   "view": "features/starter-kit/auth/register.ui.tsx"
+  },
+  {
+   "path": "/auth/account-recovery",
+   "pageId": "accountRecovery",
+   "view": "features/starter-kit/auth/account-recovery.ui.tsx"
+  },
+  {
+   "path": "/admin(/*)",
+   "pageId": "adminDashboard",
+   "view": "features/starter-kit/admin-console/console.ui.tsx"
+  },
+  {
+   "path": "/profile",
+   "pageId": "userProfile",
+   "view": "features/starter-kit/profile/profile.ui.tsx"
+  },
+  {
+   "path": "/",
+   "pageId": "homepage",
+   "view": "features/starter-kit/homepage/home.ui.tsx"
+  },
+  {
+   "path": "/1/auth/login",
+   "pageId": "login_1",
+   "view": "features/base-feature-for-ecommerce/auth/login.ui.tsx"
+  },
+  {
+   "path": "/1/auth/register",
+   "pageId": "signup_1",
+   "view": "features/base-feature-for-ecommerce/auth/register.ui.tsx"
+  },
+  {
+   "path": "/1/auth/account-recovery",
+   "pageId": "accountRecovery_1",
+   "view": "features/base-feature-for-ecommerce/auth/account-recovery.ui.tsx"
+  },
+  {
+   "path": "/1/admin(/*)",
+   "pageId": "adminDashboard_1",
+   "view": "features/base-feature-for-ecommerce/admin-console/console.ui.tsx"
+  },
+  {
+   "path": "/1/profile",
+   "pageId": "userProfile_1",
+   "view": "features/base-feature-for-ecommerce/profile/profile.ui.tsx"
+  },
+  {
+   "path": "/1/",
+   "pageId": "homepage_1",
+   "view": "features/base-feature-for-ecommerce/homepage/home.ui.tsx"
+  },
+  {
+   "path": "/items/:itemId",
+   "pageId": "catalogueDetails",
+   "view": "features/product-catalogue-details/catalogue-details.ui.tsx"
+  },
+  {
+   "path": "/items/results/:keyword",
+   "pageId": "searchResult",
+   "view": "features/product-catalogue-details/search-results.ui.tsx"
+  },
+  {
+   "path": "/cart",
+   "pageId": "cart",
+   "view": "features/shopping-cart-checkout/cart.ui.tsx"
+  },
+  {
+   "path": "/checkout",
+   "pageId": "checkout",
+   "view": "features/shopping-cart-checkout/checkout.ui.tsx"
+  },
+  {
+   "path": "/orders",
+   "pageId": "orders",
+   "view": "features/shopping-cart-checkout/orders.ui.tsx"
+  },
+  {
+   "path": "/orders/:orderId",
+   "pageId": "orderDetails",
+   "view": "features/shopping-cart-checkout/order-details.ui.tsx"
+  }
+ ]
 }

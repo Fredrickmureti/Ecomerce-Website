@@ -1,0 +1,100 @@
+{
+ "name": "App Starter Pack",
+ "packageId": "@mern.ai/simple-base-feature",
+ "description": "Provides features such as user registration, login, account recovery, home page, user profile update, user data managemnt, admin console etc",
+ "sourceFiles": [
+  {
+   "uri": "auth/login.ui.tsx",
+   "pageId": "login",
+   "suggestedPath": "/auth/login"
+  },
+  {
+   "uri": "auth/register.ui.tsx",
+   "pageId": "signup",
+   "suggestedPath": "/auth/register"
+  },
+  {
+   "uri": "auth/account-recovery.ui.tsx",
+   "pageId": "accountRecovery",
+   "suggestedPath": "/auth/account-recovery"
+  },
+  {
+   "uri": "admin-console/console.ui.tsx",
+   "pageId": "adminDashboard",
+   "suggestedPath": "/admin(/*)"
+  },
+  {
+   "uri": "profile/profile.ui.tsx",
+   "pageId": "userProfile",
+   "suggestedPath": "/profile"
+  },
+  {
+   "uri": "homepage/home.ui.tsx",
+   "pageId": "homepage",
+   "suggestedPath": "/"
+  }
+ ],
+ "aliases": [
+  {
+   "fileName": "header.tsx",
+   "alias": "@mern.ai/standard-header"
+  },
+  {
+   "fileName": "footer.tsx",
+   "alias": "@mern.ai/standard-footer"
+  },
+  {
+   "fileName": "auth/profile.ui.tsx",
+   "alias": "@mern.ai/user-profile"
+  },
+  {
+   "fileName": "profile/profile.tsx",
+   "alias": "@mern.ai/profile-widget"
+  },
+  {
+   "fileName": "project-settings/project-settings.tsx",
+   "mounts": [
+    {
+     "pageId": "adminDashboard",
+     "label": "App Settings",
+     "link": true,
+     "sortOrder": 3
+    }
+   ]
+  },
+  {
+   "fileName": "user-management/users-list.tsx",
+   "mounts": [
+    {
+     "pageId": "adminDashboard",
+     "label": "Users",
+     "link": true,
+     "sortOrder": 2
+    }
+   ]
+  },
+  {
+   "fileName": "dashboard/dashboard.tsx",
+   "mounts": [
+    {
+     "pageId": "adminDashboard",
+     "label": "Dashboard",
+     "link": true,
+     "sortOrder": 1
+    }
+   ]
+  }
+ ],
+ "categories": [
+  "basic",
+  "socialMedia",
+  "saas",
+  "admin"
+ ],
+ "published": true,
+ "quickStart": true,
+ "screenshots": [
+  "https://mern-ai-template-assets.s3.ap-south-1.amazonaws.com/starter-pack.png"
+ ],
+ "featureTitle": "Base feature for ecommerce"
+}
